@@ -9,8 +9,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             <Head>
                 <title>Armind OS</title>
                 <link rel="icon" href="/icons8-favicon-16.ico" />
-                {/* Uncomment below for additional favicon formats */}
-                {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" /> */}
+                <meta name="description" content="Framework for agents AI development." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Component {...pageProps} />
         </>
