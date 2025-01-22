@@ -1,14 +1,15 @@
+// components/organisms/NavigationBar/NavigationBar.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'; // Use Next.js Link
 import styles from '../../../styles/NavigationBar.module.css';
 
 interface LinkItem {
-  label: string;  // Text to display for the link
-  path: string;   // Route path for the link
+  label: string;
+  path: string;
 }
 
 interface NavigationBarProps {
-  links: LinkItem[]; // Array of links to render
+  links: LinkItem[];
 }
 
 const NavigationBar: React.FC<NavigationBarProps> = ({ links }) => {
@@ -16,7 +17,9 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ links }) => {
     <nav className={styles.navigationBar}>
       <div className={styles.links}>
         {links.map((link, index) => (
-          <Link key={index} to={link.path}>{link.label}</Link>
+          <Link key={index} href={link.path}>
+            {link.label}
+          </Link>
         ))}
       </div>
     </nav>

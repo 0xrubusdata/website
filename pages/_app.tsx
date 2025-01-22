@@ -2,6 +2,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';
+import Layout from '@/components/Layout';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
@@ -12,7 +13,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                 <meta name="description" content="Framework for agents AI development." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
-            <Component {...pageProps} />
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
         </>
     );
 };

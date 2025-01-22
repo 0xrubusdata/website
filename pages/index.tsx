@@ -1,8 +1,6 @@
 // pages/index.tsx
 import { FC } from 'react';
-import Header from '../components/organisms/Header/Header';
 import MainContent from '../components/organisms/MainContent/MainContent';
-import Footer from '../components/organisms/Footer/Footer';
 import styles from '../styles/Home.module.css';
 
 const Home: FC = () => {
@@ -18,19 +16,13 @@ const Home: FC = () => {
     ];
     
     return (
-        <div className={styles.container}>
-            <Header 
-                logoSrc="/logo.png" 
-                logoAlt="Logo ArmindOS" 
-                title="Welcome to the ArmindOS Framework" 
-            />
-            <MainContent 
-                description="This framework allows you to build agent AI applications with ease and efficiency."
-                links={links}
-                typewriterLines={typewriterLines}
-            />
-            <Footer copyrightText="© 2025 RubusData. All rights reserved." />
-        </div>
+      <div className={styles.container}>
+        <MainContent 
+          description="This framework allows you to build agent AI applications with ease and efficiency."
+          links={links}
+          typewriterLines={typewriterLines}
+        />
+      </div>  
     );
 };
 
