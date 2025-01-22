@@ -29,7 +29,7 @@ const Home: FC = () => {
                 </div>
             </main>
             <footer className={styles.footer}>
-                <p>&copy; 2025 Armind OS. All rights reserved.</p>
+                <p>&copy; 2025 RubusData. All rights reserved.</p>
             </footer>
         </div>
     );
