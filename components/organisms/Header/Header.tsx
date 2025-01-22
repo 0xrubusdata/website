@@ -2,11 +2,17 @@
 import Image from 'next/image';
 import styles from '../../../styles/Header.module.css';
 
-const Header = () => {
+interface HeaderProps {
+    logoSrc: string;  // Source for the logo image
+    logoAlt: string;  // Alt text for the logo image
+    title: string;    // Title to display in the header
+}
+
+const Header: React.FC<HeaderProps> = ({ logoSrc, logoAlt, title }) => {
     return (
         <header className={styles.header}>
-            <Image src="/logo.png" alt="Logo ArmindOS" width={100} height={100} />
-            <h1>Welcome to the ArmindOS Framework</h1>
+            <Image src={logoSrc} alt={logoAlt} width={100} height={100} />
+            <h1>{title}</h1>
         </header>
     );
 };

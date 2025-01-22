@@ -1,10 +1,14 @@
 // components/organisms/Footer/Footer.tsx
 import styles from '../../../styles/Footer.module.css';
 
-const Footer = () => {
+interface FooterProps {
+    copyrightText: string; // The copyright text to display in the footer
+}
+
+const Footer: React.FC<FooterProps> = ({ copyrightText }) => {
     return (
         <footer className={styles.footer}>
-            <p>&copy; 2025 RubusData. All rights reserved.</p>
+            <p>{copyrightText}</p>
         </footer>
     );
 };

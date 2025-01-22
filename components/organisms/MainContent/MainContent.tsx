@@ -1,25 +1,32 @@
 // components/organisms/MainContent/MainContent.tsx
+import React from 'react';
 import styles from '../../../styles/MainContent.module.css';
+import Typewriter from '../../atoms/Typewriter';
+import ExternalLink from '@/components/atoms/Link/ExternalLink';
 
-const MainContent = () => {
-    return (
-        <main className={styles.main}>
-            <p>This framework allows you to build agent AI applications with ease and efficiency.</p>
-            <div className={styles.links}>
-                <a href="https://github.com/0xrubusdata/armind_os" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <a href="https://x.com/Data0x88850" target="_blank" rel="noopener noreferrer">
-                    X (Twitter)
-                </a>
-            </div>
-            <div className={styles.typewriter}>
-                <p><em>01/22/2025</em></p>
-                <p>** This website will be built by the AI agent 0xRubusData using the ArmindOS framework.</p>
-                <p>** See you soon on this POC!</p>
-            </div>
-        </main>
-    );
+interface LinkItem {
+  href: string;
+  label: string;
+}
+
+interface MainContentProps {
+  description: string;
+  links: LinkItem[];
+  typewriterLines: string[];
+}
+
+const MainContent: React.FC<MainContentProps> = ({ description, links, typewriterLines }) => {
+  return (
+    <main className={styles.main}>
+      <p>{description}</p>
+      <div className={styles.linksContainer}> {/* Add a container for the links */}
+        {links.map((link, index) => (
+          <ExternalLink key={index} link={link} />
+        ))}
+      </div>
+      <Typewriter lines={typewriterLines} />
+    </main>
+  );
 };
 
 export default MainContent;

@@ -8,27 +8,12 @@
     text-align: center;
   }
   
-  .links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+  /* components/organisms/MainContent/MainContent.module.css */
+
+.linksContainer {
+  display: flex;          /* Use Flexbox for layout */
+  gap: 1rem;            /* Add some space between links */
+  margin: 1rem 0;       /* Optional: add some vertical margin */
+}
+
   
-  .typewriter {
-    margin-top: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--text-color);
-    font-size: 1rem;
-    text-align: left;
-    white-space: pre-line; /* To keep line breaks */
-    border: 1px solid #eaeaea;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    max-width: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .typewriter p:first-child {
-    font-style: italic;
-    margin-bottom: 0.5rem;
-  }
