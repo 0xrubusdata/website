@@ -28,6 +28,25 @@
   margin-top: 1rem;
 }
 
+.typewriter {
+  margin-top: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-align: left;
+  white-space: pre-line; /* To keep line breaks */
+  border: 1px solid #eaeaea;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  max-width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.typewriter p:first-child {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
 .footer {
   display: flex;
   justify-content: center;
