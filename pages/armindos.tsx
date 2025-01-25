@@ -1,9 +1,9 @@
 // pages/index.tsx
 import { FC } from 'react';
 import MainContent from '../components/organisms/MainContent/MainContent';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Armindos.module.css';
 
-const Home: FC = () => {
+const Armindos: FC = () => {
     const links = [
       { href: "https://github.com/0xrubusdata/armind_os", label: "GitHub" },
       { href: "https://x.com/Data0x88850", label: "X (Twitter)" },
@@ -18,7 +18,7 @@ const Home: FC = () => {
     return (
       <div className={styles.container}>
         <MainContent 
-          description=""
+          description="This framework allows you to build agent AI applications with ease and efficiency."
           links={links}
           typewriterLines={typewriterLines}
         />
@@ -26,4 +26,4 @@ const Home: FC = () => {
     );
 };
 
-export default Home;
+export default Armindos;

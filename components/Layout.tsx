@@ -11,8 +11,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   // Define your links for the navigation
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '/' },
-    { label: 'Services', path: '/' },
+    { label: 'About', path: '/about' },
+    { label: 'ArmindOS', path: '/armindos' },
+    { label: 'Roadmap', path: '/roadmap' },
+    { label: 'Agents', path: '/' }, 
     { label: 'Blog', path: '/blog' },
     { label: 'Contact', path: '/' },
   ];
@@ -22,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header 
         logoSrc="/logo.png" 
         logoAlt="Logo ArmindOS" 
-        title="Welcome to the ArmindOS Framework" 
+        title="Welcome to Rubus Lab" 
       />    
       <NavigationBar links={navLinks} />
       <main>{children}</main>

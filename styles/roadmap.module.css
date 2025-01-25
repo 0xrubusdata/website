@@ -1,0 +1,32 @@
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.main {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.roadmapList {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmapList li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
