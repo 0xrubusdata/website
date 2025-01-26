@@ -18,7 +18,6 @@ interface MainContentProps {
 const MainContent: React.FC<MainContentProps> = ({ description, links, typewriterLines }) => {
   return (
     <main className={styles.main}>
-      <p>{description}</p>
       <div className={styles.linksContainer}> {/* Add a container for the links */}
         {links.map((link, index) => (
           <ExternalLink key={index} link={link} />
