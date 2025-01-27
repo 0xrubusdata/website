@@ -31,6 +31,16 @@ const agents = [
     },
     status: "In Development",
   },
+  {
+    name: "101xrubusdata",
+    description:
+      "Social Media Moderator.",
+    image: "/agents/101xrubusdata/101xrubusdata.png",
+    socials: {
+      twitter: "https://x.com/",
+    },
+    status: "In Development",
+  },
   
   // Ajoute d'autres agents ici
 ];
