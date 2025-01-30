@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div>
       
       <main>{children}</main>
-      <Footer copyrightText="© 2025 RubusData. All rights reserved." />
+      <Footer/>
     </div>
   );
 };

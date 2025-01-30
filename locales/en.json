@@ -1,0 +1,25 @@
+{
+    "config_ai": "AI Configuration",
+    "api_provider": "API Provider",
+    "api_key": "API Key",
+    "config_network": "Network Configuration",    
+    "network_name": "Network Name",
+    "network_context": "Network Context",
+    "config_service": "Service Configuration",
+    "service_name": "Service Name",
+    "service_context": "Service Context",
+    "config_agent": "Agent Configuration",
+    "agent_name": "Agent Name",
+    "agent_context": "Agent Context",
+    "agent_description": "Agent Description",
+    "agent_goal": "Agent Goal",
+    "agent_task": "Agent Task",
+    "agent_objective": "Agent Objective",
+    "agent_objective_description": "Agent Objective Description",
+    "agent_objective_context": "Agent Objective Context",
+    "agent_objective_context_description": "Agent Objective Context Description",
+    "save": "Save",
+    "cancel": "Cancel",
+    "return": "Return"
+}
+  

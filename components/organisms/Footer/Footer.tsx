@@ -1,16 +1,8 @@
-// components/organisms/Footer/Footer.tsx
-import styles from '../../../styles/Footer.module.css';
+import React from "react";
+import { Typography } from "@mui/material";
 
-interface FooterProps {
-    copyrightText: string; // The copyright text to display in the footer
-}
-
-const Footer: React.FC<FooterProps> = ({ copyrightText }) => {
-    return (
-        <footer className={styles.footer}>
-            <p>{copyrightText}</p>
-        </footer>
-    );
+const Footer = () => {
+    return <Typography variant="body2">© 2025 RubusData. All rights reserved.</Typography>;
 };
 
 export default Footer;
